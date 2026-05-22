@@ -1,0 +1,273 @@
+.aboutContent {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.termLine {
+  font-size: 11px;
+  color: #c06080;
+  margin-bottom: 4px;
+  font-family: "Courier New", monospace;
+}
+
+.aboutHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 2px solid;
+  border-color: #a00050 #fff #fff #a00050;
+  padding: 10px 14px;
+}
+
+.aboutAvatar {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.aboutAvatar img {
+  width: 60px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.aboutName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #800040;
+}
+
+.aboutRole {
+  font-size: 11px;
+  color: #c06080;
+  margin-top: 2px;
+}
+
+.aboutStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #acccfd;
+  border: 1px solid #a3c6fe;
+  padding: 2px 8px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #1a4a8a;
+  margin-top: 4px;
+  letter-spacing: 0.4px;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  background: #185fa5;
+  border-radius: 50%;
+}
+
+.codeBlock {
+  background: #fff;
+  border: 2px solid;
+  border-color: #a00050 #fff #fff #a00050;
+  padding: 10px 14px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.codePrompt {
+  color: #ff1493;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 1px;
+  white-space: nowrap;
+}
+
+.codeBlock pre {
+  margin: 0;
+  color: #5a0030;
+  font-size: 11px;
+  line-height: 1.7;
+  font-family: "Courier New", monospace;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, #ff69b4, #acccfd);
+  margin: 2px 0 8px;
+}
+
+.eduSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.eduLabel {
+  font-size: 9px;
+  font-weight: bold;
+  color: #a00050;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.eduLabel::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, #ff69b4 0%, #acccfd 100%);
+}
+
+.eduCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.eduItem {
+  background: #fff;
+  border-top: 3px solid #ff69b4;
+  border-right: 2px solid #d08090;
+  border-bottom: 2px solid #d08090;
+  border-left: 2px solid #fff;
+  padding: 9px 11px;
+  position: relative;
+}
+
+.eduItemOngoing {
+  border-top-color: #a3c6fe;
+}
+
+.eduBadge {
+  display: inline-block;
+  background: #ff69b4;
+  color: #fff;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 2px 6px;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.eduBadgeOngoing {
+  background: #a3c6fe;
+  color: #1a4a8a;
+}
+
+.eduCourse {
+  font-size: 11px;
+  font-weight: bold;
+  color: #800040;
+  line-height: 1.4;
+  margin-bottom: 3px;
+  padding-right: 36px;
+}
+
+.eduSub {
+  font-size: 9px;
+  color: #c06080;
+  font-family: "Courier New", monospace;
+}
+
+.eduYear {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  font-size: 9px;
+  color: #d08090;
+  font-weight: bold;
+}
+
+.eduItemOngoing .eduYear {
+  color: #acccfd;
+}
+
+.langSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.langSection img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .aboutName {
+    font-size: 16px;
+  }
+
+  .codeBlock pre {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .aboutAvatar img {
+    width: 48px;
+    height: 56px;
+  }
+
+  .aboutName {
+    font-size: 13px;
+  }
+
+  .aboutRole {
+    font-size: 9px;
+  }
+
+  .aboutStatus {
+    font-size: 8px;
+    padding: 2px 6px;
+    gap: 4px;
+  }
+
+  .statusDot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .codeBlock {
+    padding: 8px 10px;
+    gap: 7px;
+  }
+
+  .codePrompt {
+    font-size: 10px;
+  }
+
+  .codeBlock pre {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  .eduCards {
+    grid-template-columns: 1fr;
+  }
+
+  .eduCourse {
+    font-size: 10px;
+  }
+
+  .langSection img {
+    width: 34px;
+    height: 34px;
+  }
+}

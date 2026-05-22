@@ -1,0 +1,149 @@
+.skillsContent {
+  padding: 16px 18px;
+}
+
+.termLine {
+  font-size: 11px;
+  color: #c06080;
+  margin-bottom: 12px;
+  font-family: "Courier New", monospace;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.skillCard {
+  overflow: hidden;
+}
+
+.skillCardHeader {
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pink {
+  background: #ff69b4;
+}
+
+.blue {
+  background: #5b8fc7;
+}
+
+.skillCount {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 1px 5px;
+  font-size: 8px;
+  letter-spacing: 0;
+}
+
+.skillCardBody {
+  background: #fff0f5;
+  border: 2px solid;
+  border-color: #fff #d08090 #d08090 #fff;
+  border-top: none;
+  padding: 11px 12px;
+}
+
+.skillCardBodyBlue {
+  background: #e8f1f5;
+  border-color: #fff #7aabcf #7aabcf #fff;
+}
+
+.skillItem {
+  margin-bottom: 9px;
+}
+
+.skillItem:last-child {
+  margin-bottom: 0;
+}
+
+.skillLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: bold;
+  color: #800040;
+  margin-bottom: 4px;
+}
+
+.skillLabelBlue {
+  color: #1a4a8a;
+}
+
+.skillBar {
+  height: 10px;
+  background: #ffc0cb;
+  border: 2px solid;
+  border-color: #a00050 #fff #fff #a00050;
+  overflow: hidden;
+}
+
+.skillBarBlue {
+  background: #b7d2fd;
+  border-color: #3a6fa5 #fff #fff #3a6fa5;
+}
+
+.skillFill {
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    #ff1493,
+    #ff1493 5px,
+    #ff69b4 5px,
+    #ff69b4 10px
+  );
+}
+
+.skillFillBlue {
+  background: repeating-linear-gradient(
+    90deg,
+    #185fa5,
+    #185fa5 5px,
+    #5b8fc7 5px,
+    #5b8fc7 10px
+  );
+}
+
+@media (max-width: 1024px) {
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── MOBILE (≤ 768px) ── */
+@media (max-width: 768px) {
+  .skillsContent {
+    padding: 12px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .skillCardHeader {
+    font-size: 9px;
+    padding: 4px 8px;
+  }
+
+  .skillCardBody {
+    padding: 9px 10px;
+  }
+
+  .skillLabel {
+    font-size: 9px;
+  }
+
+  .skillBar {
+    height: 8px;
+  }
+}

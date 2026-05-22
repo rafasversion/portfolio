@@ -1,0 +1,41 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  flex-shrink: 0;
+  z-index: 9998;
+}
+
+.footer .windows,
+.browser,
+.volume,
+.batery {
+  width: 35px;
+}
+
+.wifi {
+  width: 35px;
+  height: 25px;
+}
+
+.footer .apps,
+.controllers {
+  display: flex;
+  gap: 15px;
+}
+
+.volume,
+.batery {
+  height: 25px;
+}
+
+.footer span {
+  font-size: 20px;
+}

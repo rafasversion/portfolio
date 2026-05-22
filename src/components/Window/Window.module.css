@@ -1,0 +1,93 @@
+.window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(780px, calc(100vw - 32px));
+  height: min(540px, calc(100vh - 48px - 32px));
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 48px - 16px);
+  background: #ffc0cb;
+  border: 2px solid #fff;
+  box-shadow:
+    inset -2px -2px 0 #a00050,
+    inset 2px 2px 0 #fff,
+    4px 4px 0 #800040;
+  user-select: none;
+}
+
+.maximized {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: none;
+}
+
+.windowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  height: 30px;
+  background: linear-gradient(90deg, #ff69b4, #ff85c1);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: grab;
+}
+
+.windowHeader:active {
+  cursor: grabbing;
+}
+
+.windowActions {
+  display: flex;
+  gap: 4px;
+}
+
+.windowActions button {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffc0cb;
+  border: 2px solid;
+  border-color: #fff #800040 #800040 #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0;
+  cursor: none;
+}
+
+.windowActions button:active {
+  border-color: #800040 #fff #fff #800040;
+}
+
+.closeWindow {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffc0cb;
+  border: 2px solid;
+  border-color: #fff #800040 #800040 #fff;
+  font-size: 14px;
+  font-weight: bold;
+  color: #800040;
+  padding: 0;
+  cursor: pointer;
+}
+
+.closeWindow:active {
+  border-color: #800040 #fff #fff #800040;
+}
+
+.windowContent {
+  padding: 0;
+  background: #ffd6e0;
+  height: calc(100% - 30px);
+  overflow: auto;
+}

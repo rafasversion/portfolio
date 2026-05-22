@@ -1,0 +1,202 @@
+.contactContent {
+  padding: 16px 18px;
+}
+
+.termLine {
+  font-size: 11px;
+  color: #c06080;
+  margin-bottom: 12px;
+  font-family: "Courier New", monospace;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.contactLeft,
+.contactRight {
+  overflow: hidden;
+}
+
+.contactCardHeader {
+  padding: 4px 10px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Courier New", monospace;
+}
+
+.contactLeft .contactCardHeader {
+  background: #ff69b4;
+}
+
+.contactRight .contactCardHeader {
+  background: #5b8fc7;
+}
+
+.contactCardBody {
+  background: #fff0f5;
+  border: 2px solid;
+  border-color: #fff #d08090 #d08090 #fff;
+  border-top: none;
+  padding: 11px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactRight .contactCardBody {
+  background: #e8f1f5;
+  border-color: #fff #7aabcf #7aabcf #fff;
+}
+
+.socialBtn {
+  width: 100%;
+  padding: 6px 10px;
+  text-align: left;
+  background: #fff;
+  border: 2px solid;
+  border-color: #fff #a00050 #a00050 #fff;
+  font-size: 11px;
+  font-weight: bold;
+  color: #800040;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialBtn:active {
+  border-color: #a00050 #fff #fff #a00050;
+}
+
+.socialArrow {
+  color: #ff1493;
+  font-size: 9px;
+}
+
+.contactStatus {
+  background: #acccfd;
+  border: 1px solid #a3c6fe;
+  padding: 7px 9px;
+  font-size: 9px;
+  color: #1a4a8a;
+  line-height: 1.8;
+  font-family: "Courier New", monospace;
+}
+
+.contactStatus p {
+  margin: 0;
+}
+
+.contactLabel {
+  font-size: 9px;
+  font-weight: bold;
+  color: #800040;
+  font-family: "Courier New", monospace;
+}
+
+.contactInput,
+.contactTextarea {
+  width: 100%;
+  padding: 5px 7px;
+  background: #fff;
+  border: 2px solid;
+  border-color: #a00050 #fff #fff #a00050;
+  font-size: 11px;
+  color: #5a0030;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Courier New", monospace;
+}
+
+.contactTextarea {
+  height: 60px;
+  resize: none;
+}
+
+.sendBtn {
+  width: 100%;
+  padding: 8px;
+  background: #ff69b4;
+  border: 2px solid;
+  border-color: #fff #800040 #800040 #fff;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 0 #a00050;
+  letter-spacing: 0.3px;
+  font-family: "Courier New", monospace;
+}
+
+.sendBtn:active:not(:disabled) {
+  border-color: #800040 #fff #fff #800040;
+}
+
+.sendBtn:disabled {
+  opacity: 0.7;
+}
+
+.formSuccess {
+  background: #acccfd;
+  border: 1px solid #a3c6fe;
+  padding: 14px 12px;
+  font-size: 10px;
+  color: #1a4a8a;
+  font-family: "Courier New", monospace;
+  line-height: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formSuccess p {
+  margin: 0;
+}
+
+.formError {
+  font-size: 9px;
+  color: #a00050;
+  font-family: "Courier New", monospace;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContent {
+    padding: 12px;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .socialBtn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .contactInput,
+  .contactTextarea {
+    font-size: 10px;
+  }
+
+  .contactTextarea {
+    height: 50px;
+  }
+
+  .sendBtn {
+    font-size: 12px;
+    padding: 7px;
+  }
+}

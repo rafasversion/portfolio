@@ -1,0 +1,269 @@
+.projectsContent {
+  padding: 16px 18px;
+}
+
+.termLine {
+  font-size: 11px;
+  color: #c06080;
+  margin-bottom: 12px;
+  font-family: "Courier New", monospace;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.projectCard {
+  background: #fff0f5;
+  border: 2px solid;
+  border-color: #fff #d08090 #d08090 #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCardHeader {
+  background: #ff69b4;
+  padding: 4px 8px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Courier New", monospace;
+}
+
+.projectHeaderDot {
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.projectThumb {
+  height: 70px;
+  border-bottom: 1px solid #d08090;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectThumbBlue {
+  background: repeating-linear-gradient(
+    45deg,
+    #b7d2fd,
+    #b7d2fd 6px,
+    #acccfd 6px,
+    #acccfd 12px
+  );
+}
+
+.projectThumbPink {
+  background: repeating-linear-gradient(
+    135deg,
+    #ffc0cb,
+    #ffc0cb 6px,
+    #ffaabb 6px,
+    #ffaabb 12px
+  );
+}
+
+.projectThumbMix {
+  background: repeating-linear-gradient(
+    45deg,
+    #e8f1f5,
+    #e8f1f5 6px,
+    #acccfd 6px,
+    #acccfd 12px
+  );
+}
+
+.projectThumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.projectThumbIcon {
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.projectThumbBadge {
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #d08090;
+  font-size: 7px;
+  font-weight: bold;
+  color: #800040;
+  padding: 1px 4px;
+  font-family: "Courier New", monospace;
+}
+
+.projectCardBody {
+  padding: 9px 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projectTitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #800040;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.projectNewBadge {
+  background: #acccfd;
+  color: #1a4a8a;
+  font-size: 7px;
+  font-weight: bold;
+  padding: 1px 4px;
+  letter-spacing: 0.3px;
+}
+
+.projectDesc {
+  font-size: 10px;
+  color: #804060;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  flex: 1;
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-bottom: 7px;
+}
+
+.tag {
+  background: #ffc0cb;
+  border: 1px solid #d08090;
+  padding: 1px 5px;
+  font-size: 8px;
+  font-weight: bold;
+  color: #800040;
+}
+
+.tagBlue {
+  background: #e8f1f5;
+  border-color: #b7d2fd;
+  color: #185fa5;
+}
+
+.projectActions {
+  display: flex;
+  gap: 4px;
+}
+
+.projectBtn {
+  flex: 1;
+  padding: 4px;
+  background: #ffc0cb;
+  border: 2px solid;
+  border-color: #fff #a00050 #a00050 #fff;
+  font-size: 9px;
+  font-weight: bold;
+  color: #800040;
+  cursor: pointer;
+  text-align: center;
+}
+
+.projectBtn:active {
+  border-color: #a00050 #fff #fff #a00050;
+}
+
+.projectBtnBlue {
+  background: #e8f1f5;
+  border-color: #fff #3a6fa5 #3a6fa5 #fff;
+  color: #185fa5;
+}
+
+.projectBtnBlue:active {
+  border-color: #3a6fa5 #fff #fff #3a6fa5;
+}
+
+.projectsContent {
+  padding: 16px 18px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.projectsContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.projectsContent::-webkit-scrollbar-track {
+  background: #ffc0cb;
+}
+
+.projectsContent::-webkit-scrollbar-thumb {
+  background: #ff69b4;
+  border-radius: 0;
+  border: 1px solid #a00050;
+}
+
+.projectsContent::-webkit-scrollbar-thumb:hover {
+  background: #ff1493;
+}
+
+@media (max-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsContent {
+    padding: 12px;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .projectThumb {
+    height: 60px;
+  }
+
+  .projectCardHeader {
+    font-size: 8px;
+  }
+
+  .projectCardBody {
+    padding: 8px;
+  }
+
+  .projectTitle {
+    font-size: 11px;
+  }
+
+  .projectDesc {
+    font-size: 9px;
+  }
+
+  .tag {
+    font-size: 7px;
+  }
+
+  .projectBtn {
+    font-size: 8px;
+    padding: 5px 4px;
+  }
+}

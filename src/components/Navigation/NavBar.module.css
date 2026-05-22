@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+}
+
+.navigationContent {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(100vh - 48px);
+  gap: 20px;
+  overflow: hidden;
+}
+
+.navButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navButton span {
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+}
+
+.navButton:hover {
+  background: rgba(0, 162, 255, 0.24);
+}
+
+.aboutme,
+.projects,
+.trash,
+.contact {
+  width: 70px;
+}
+
+.skills {
+  width: 64px;
+}

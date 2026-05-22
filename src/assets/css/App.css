@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pixelify Sans", sans-serif;
+  cursor: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.cursor {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  pointer-events: none;
+  z-index: 999999;
+  background: url("../img/cursor.png") no-repeat center;
+  background-size: contain;
+}
+
+.cursor.pointer {
+  background: url("../img/cursor-pointer.png") no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto;
+  }
+
+  .cursor {
+    display: none;
+  }
+}
